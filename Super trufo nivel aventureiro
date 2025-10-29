@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main( ){ 
+     int pib = 1000;
+     int população = 500;
+
+int escolhajogador, escolhacomputador;
+
+srand(time(0));
+
+printf("jogo de cartas\n");
+printf("escolha uma opação\n");
+printf("carta 1.\n");
+printf("carta 2.\n");
+printf("escolha\n");
+scanf("%d", &escolhajogador);
+
+escolhacomputador = 1 + 1;
+
+switch (escolhajogador){
+     case 1:
+     printf("jogador carta 1\n");
+     break;
+}
+     switch (escolhacomputador){
+          case 1:
+          printf("computador carta 1\n");
+          break;
+     }
+
+     switch (escolhajogador){
+          case 2:
+          printf("jogador carta 2\n");
+          break;
+     }
+          switch (escolhacomputador){
+               case 2:
+               printf("computador carta 2\n");
+               break;
+          }
+
+          if (escolhacomputador == escolhajogador) 
+               printf("**empate**\n");
+
+          if (escolhacomputador > escolhajogador)
+              printf("voce perdeu\n");
+
+          if (escolhajogador > escolhacomputador) 
+             printf("voce ganhou\n");
+
+             
+    return 0;
+
+}
